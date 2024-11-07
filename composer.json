@@ -8,6 +8,11 @@
     "require-dev": {
         "guzzlehttp/guzzle": "^7.9"
     },
+    "autoload": {
+        "psr-4": {
+            "Nearby\\": "src/"
+        }
+    },
     "authors": [
         {
             "name": "Debarun Saha",
