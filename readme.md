@@ -29,7 +29,7 @@ use Debarun\Nearby\Api;
 
 require __DIR__.'/vendor/autoload.php';
 
-$response = (new Api('AIzaSyCnk2hUMHlN-U6_mbunxJb1ZdT4zRLWCc0'))->getNearbyPlaces('22.932648429114025','88.4189063273865',['police'],2000);
+$response = (new Api('xxxxxxxxxxx'))->getNearbyPlaces('22.932648429114025','88.4189063273865',['police'],2000);
 
 print_r(json_decode($response['data']));
 ```
