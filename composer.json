@@ -1,0 +1,17 @@
+{
+    "name": "debarun/nearbyentity",
+    "description": "It searches nearby entities and provide details about the places",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Debarun\\Nearbyentity\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Debarun Saha",
+            "email": "developer.debarun@gmail.com"
+        }
+    ],
+    "require": {}
+}
