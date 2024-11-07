@@ -1,6 +1,6 @@
 <?php
 
-namespace Nearby;
+namespace Debarun\Nearby;
 
 use GuzzleHttp\Client;
 
@@ -11,7 +11,7 @@ class Api {
         $this->client = new Client();
     }
 
-    public function getNearbyPlaces(string $lat, string $lang, string|int $radius, array $types, string $fields = 'places.id,places.displayName,places.formattedAddress'): array {
+    public function getNearbyPlaces(string $lat, string $lang, array $types, string|int $radius=2000,  string $fields = 'places.id,places.displayName,places.formattedAddress'): array {
         $response = $this->client->post('https://places.googleapis.com/v1/places:searchNearby', [
             'query' => [
                 'fields' => $fields,
@@ -33,10 +33,9 @@ class Api {
 
         return [
             'status' => $response->getStatusCode(),
-            'contents' => $response->getBody(),
+            'data' => $response->getBody(),
         ];
     }
-
 
     public function getPlaceDetails(string $placeId, string $fields = 'id,displayName,formattedAddress,nationalPhoneNumber,internationalPhoneNumber,googleMapsLinks') : array {
         $response = $this->client->get("https://places.googleapis.com/v1/places/$placeId", [
@@ -48,7 +47,7 @@ class Api {
 
         return [
             'status' => $response->getStatusCode(),
-            'contents' => $response->getBody(),
+            'data' => $response->getBody(),
         ];
     }
 }

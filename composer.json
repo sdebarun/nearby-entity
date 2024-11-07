@@ -4,21 +4,20 @@
     "type": "project",
     "license": "MIT",
     "require": {
-        "guzzlehttp/guzzle": "^7.0",
-        "php": "^7.4 || ^8.0"
+        "guzzlehttp/guzzle": "^7.0"
     },
     "require-dev": {
         "guzzlehttp/guzzle": "^7.9"
     },
     "autoload": {
         "psr-4": {
-            "Nearby\\": "src/"
+            "Debarun\\Nearby\\": "src/"
         }
     },
     "authors": [
         {
             "name": "Debarun Saha",
-            "email": "sdebarun04@gmail.com"
+            "email": "developer.debarun@gmail.com"
         }
     ]
 }
