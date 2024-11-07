@@ -20,6 +20,5 @@
             "email": "developer.debarun@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    "minimum-stability": "dev"
 }
