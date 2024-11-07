@@ -21,7 +21,7 @@ A PHP package to retrieve detailed information about places based on your locati
 To install this package, use Composer:
 
 ```bash
-composer create-project debarun/nearby-entity
+composer require debarun/nearby-entity
 ```
 ## Usage
 ```bash
