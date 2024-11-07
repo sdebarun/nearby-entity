@@ -20,7 +20,8 @@ A PHP package to retrieve detailed information about places based on your locati
 
 To install this package, use Composer:
 
-```composer create-project debarun/nearby-entity
+```bash
+composer create-project debarun/nearby-entity
 ```
 ## License
 
