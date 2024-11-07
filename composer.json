@@ -2,8 +2,10 @@
     "name": "debarun/nearby-entity",
     "description": "It provides result for nearby entity",
     "type": "project",
+    "license": "MIT",
     "require": {
-        "guzzlehttp/guzzle": "^7.0"
+        "guzzlehttp/guzzle": "^7.0",
+        "php": "^7.4 || ^8.0"
     },
     "require-dev": {
         "guzzlehttp/guzzle": "^7.9"
