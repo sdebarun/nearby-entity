@@ -19,5 +19,7 @@
             "name": "Debarun Saha",
             "email": "developer.debarun@gmail.com"
         }
-    ]
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
