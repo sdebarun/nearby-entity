@@ -23,6 +23,16 @@ To install this package, use Composer:
 ```bash
 composer create-project debarun/nearby-entity
 ```
+## Usage
+```bash
+use Debarun\Nearby\Api;
+
+require __DIR__.'/vendor/autoload.php';
+
+$response = (new Api('AIzaSyCnk2hUMHlN-U6_mbunxJb1ZdT4zRLWCc0'))->getNearbyPlaces('22.932648429114025','88.4189063273865',['police'],2000);
+
+print_r(json_decode($response['data']));
+```
 ## License
 
 This package is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
